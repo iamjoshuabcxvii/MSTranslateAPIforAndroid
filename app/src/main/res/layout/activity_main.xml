@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:context="com.example.joshu.translatorownimplementation.MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:text="Text to Be Translated"
+            android:textColor="@android:color/background_dark"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/txtOriginalText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="안녕하세요 123 -)^ 친구"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="59dp" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtOriginalText"
+        android:layout_alignStart="@+id/txtOriginalText"
+        android:layout_below="@+id/txtOriginalText"
+        android:layout_marginTop="14dp"
+        android:text="Translated Text"
+        android:textColor="@android:color/background_dark"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/txtTranslatedText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Translated Text Will Appear Here" />
+
+    <Button
+        android:id="@+id/btnTranslate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtTranslatedText"
+        android:layout_alignStart="@+id/txtTranslatedText"
+        android:layout_below="@+id/txtTranslatedText"
+        android:layout_marginLeft="109dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="17dp"
+        android:onClick="translate"
+        android:text="Translate" />
+
+
+</RelativeLayout>
+
+
+
+
+
