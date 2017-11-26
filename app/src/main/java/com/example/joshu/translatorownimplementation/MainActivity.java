@@ -91,9 +91,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void translate(View view) {
 //        String textOrig = txtOriginalText.getText().toString();
-        String textOrig ="안녕하세요 123 -)^ 친구";
-//        String textOrig;
-//        textOrig=txtOriginalText.getText().toString();
+//        String textOrig ="안녕하세요 123 -)^ 친구";
+        String textOrig;
+        textOrig=txtOriginalText.getText().toString();
         String output;
 
 
